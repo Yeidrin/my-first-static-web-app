@@ -1,17 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uzaga Shop - Encuentra proteína calidad premium para tratamiento post lipotransferencia.">
+    <meta name="keywords" content="lipotransferencia, Proteínas, fibra, Etapa 1, Etapa 2, Etapa 3, nutrición, suplementos, dietéticos, regeneración de tejidos, masa muscular, Uzaga Shop">
+    <meta name="author" content="Uzaga Shop">
+    <meta name="robots" content="index, follow">
+    
+    <!-- WhatsApp Share -->
+    <meta property="og:title" content="Uzaga Shop - todo para tu lipotransferencia">
+    <meta property="og:description" content="Proteínas para regeneración, Preparación y recuperación de la lipotransferencia.">
+    <meta property="og:image" content="images/bannerOG.jpeg">
+    <meta property="og:url" content="https://wa.me/50684134199"> 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Estilos y Fuentes -->
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <link rel="stylesheet" href="output.css">
+    
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="carousel.js" defer></script>
+    <script src="menu.js" defer></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DC21BTS3FK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DC21BTS3FK');
+        gtag('config', 'AW-16883084470');
+    </script>
+    
+    <title>Uzaga Shop - Proteínas lipotransferencia </title>
 </head>
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+<body> 
+  <div id="envios" class="text-white  text-center 2xl:h-16 xl:h-16 lg:h-16 md:h-14 sm:h-12 h-10 text-xl">
+    <h1 class="pt-2"> Envíos a todo el país 
+      </h1> <h1 class="text-sm">Proteína de alta calidad para cirugía estética: cicatrización, regeneración y resultados increíbles.</h1></div>
+<!--Menu inicio-->
+<div class="navbar-menu relative z-50 hidden lg:w-0 h-0">
+  <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+    <div class="flex items-center mb-8">
+       <button id="menu-close" title="Close menu" class="navbar-close">
+        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div>
+      <ul>
+        <li class="mb-1">
+          <a href="index.html" class="block p-4 text-sm font-semibold text-black-600 hover:bg-pink-50 hover:scale-110" >Inicio</a> 
+        </li>
+         <li class="mb-1">
+          <a href="Productos.html" class="block p-4 text-sm font-semibold text-black-600 hover:bg-pink-50 hover:scale-110" >Productos</a>
+        </li>	<li class="mb-1">
+          <a href="https://minuevasilueta.com/blogs/news" class="block p-4 text-sm font-semibold text-black-600 hover:bg-pink-50 hover:scale-110" >Blog</a>
+        </li>	<li class="mb-1">
+          <a href="Contacto.html" class="block p-4 text-sm font-semibold text-black-600 hover:bg-pink-50 hover:scale-110" >Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="lg:hidden">
+<button id="menu-burger" title="Open menu" class="navbar-burger flex items-center text-black p-3">
+  <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+  </svg>
+</button>
+</div>
+<header >
+<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">  <a  href="index.html"> 
+      <h1 class="sm:text-3xl text-2xl  font-gothic font-bold  text-black">UZAGA.SHOP</h1>
+    </a>
+  <!-- component -->
+<nav class="md:ml-auto flex flex-wrap justify-start w-2/5">
+    <ul class=" hidden absolute transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6  lg:divide-x-2 lg:divide-stone-950 lg:divide-solid md:ml-auto md:mr-auto  items-center ">
+        <li><a href="index.html" class="p-2 self-center  font font-gothic font-bold text-xl" >Inicio </a></li>
+        <li><a href="Productos.html" class="p-2 self-center  font font-gothic font-bold text-xl" >Productos</a> </li>
+         <li><a href="https://minuevasilueta.com/blogs/news" class="p-2 self-center  font font-gothic font-bold text-xl" >Blog</a></li>
+        <li><a href="Contacto.html" class="p-2 self-center  font font-gothic font-bold text-xl" >Contacto</a></li>
+    </ul>
+</nav> <a href="mailto:info@uzaga.shop?cc=info@uzaga.shop&amp;subject=Email-subject&amp;body=Hola%20deseo%2C%0A%0A%3Csaber%20mas%20de%20los%20productos%3E"> <img src="images/iconocorreo.png" alt="enviar correo"></a>
+  </div>
+  </header>
+    <a href="https://wa.me/50684134199" class="float " target="_blank">
+      <img src="images/iconowhatsapp.png" alt="Whatsapp"> </a>
+    <!--carrusel-->
+    <div class="carousel">
+      <div class= "2xl:w-2/3	xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full 2xl:flex-row 	xl:flex-row	lg:flex flex-row 	sm:flex-wrap flex flex-wrap mb-4 carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+          <div class="carousel-item	flex flex-row	">  <div class="2xl:basis-6/12 xl:basis-6/12 lg:basis-6/12 md:basis-6/12 sm:basis-0	 basis-0"> <img class="2xl:visible xl:visible lg:visible md:visible sm:invisible invisible" alt="item"  src="images/chica1.png">
+          </div>
+          <div class="2xl:basis-6/12 xl:basis-6/12 lg:basis-6/12 md:basis-6/12 sm:basis-full basis-full">     <p class="w-4/5 mx-auto p-2 text-2xl font-extrabold	">Etapa 1</p> <img src="images/fresa.png" alt=""><p class="w-4/5 mx-auto p-2  text-xl font-bold italic">0 a 4 semanas post lipotransferencia
+          </p><p class="w-4/5 mx-auto p-2  text-xl font-semibold"><span class="text-green-500	"> &#x2713; </span> Cicatrización</p><p class="w-4/5 mx-auto p-2  text-xl font-semibold"><span class="text-green-500	"> &#x2713; </span> Reduce inflamación
+          </p>
+          </div>          </div> 
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item	flex flex-row	">  <div class="2xl:basis-6/12 xl:basis-6/12 lg:basis-6/12 md:basis-6/12 sm:basis-0	 basis-0	"><img class="2xl:visible xl:visible lg:visible md:visible sm:invisible invisible"  src="images/chica2.png" alt="item">
+          </div>
+          <div class="2xl:basis-6/12 xl:basis-6/12 lg:basis-6/12 md:basis-6/12 sm:basis-full basis-full">     <p class="w-4/5 mx-auto p-2 text-2xl font-extrabold text-white	">Etapa 2</p> <img src="images/chocolate.png" alt=""><p class="w-4/5 mx-auto p-2  text-xl font-bold italic">0 a 12 semanas post lipotransferencia</p><p class="w-4/5 mx-auto p-2  text-xl font-semibold"><span class="text-green-500	"> &#x2713; </span> Cicatrización</p><p class="w-4/5 mx-auto p-2  text-xl font-semibold"><span class="text-green-500	"> &#x2713; </span> Regeneración de tejidos
+          </p>
+          </div>          </div> 
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item	flex flex-row	">  <div class="2xl:basis-6/12 xl:basis-6/12 lg:basis-6/12 md:basis-6/12 sm:basis-0	 basis-0	"><img class="2xl:visible xl:visible lg:visible md:visible sm:invisible invisible" src="images/chica3.png" alt="item">
+          </div>
+          <div class="2xl:basis-6/12 xl:basis-6/12 lg:basis-6/12 md:basis-6/12 sm:basis-full basis-full">     <p class="w-4/5 mx-auto p-2 text-2xl font-extrabold	">Etapa 3</p> <img src="images/vainilla.png" alt=""><p class="w-4/5 mx-auto p-2  text-xl font-bold italic">A partir de 12 semanas post lipotransferencia
+          </p><p class="w-4/5 mx-auto p-2  text-xl font-semibold"><span class="text-green-500	"> &#x2713; </span> Soporte final de cicatrización
+          </p><p class="w-4/5 mx-auto p-2  text-xl font-semibold"><span class="text-green-500	"> &#x2713; </span> Maduración de tejidos
+          </p><p class="w-4/5 mx-auto p-2  text-xl font-semibold"><span class="text-green-500	"> &#x2713; </span> Asegurar recuperación completa
+          </p>
+          </div>          </div> 
+          <label for="carousel-3" class="2xl:text-9xl xl:text-9xl lg:text-9xl md:text-8xl sm:text-7xl text-5xl carousel-control prev control-1 ">‹</label>
+          <label for="carousel-2" class="2xl:text-9xl xl:text-9xl lg:text-9xl md:text-8xl sm:text-7xl text-5xl carousel-control next control-1">›</label>
+          <label for="carousel-1" class="2xl:text-9xl xl:text-9xl lg:text-9xl md:text-8xl sm:text-7xl text-5xl carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="2xl:text-9xl xl:text-9xl lg:text-9xl md:text-8xl sm:text-7xl text-5xl carousel-control next control-2">›</label>
+          <label for="carousel-2" class="2xl:text-9xl xl:text-9xl lg:text-9xl md:text-8xl sm:text-7xl text-5xl  carousel-control prev control-3">‹</label>
+          <label for="carousel-1" class="2xl:text-9xl xl:text-9xl lg:text-9xl md:text-8xl sm:text-7xl text-5xl  carousel-control next control-3">›</label>
+          <ol class="carousel-indicators">
+              <li>
+                  <label for="carousel-1" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                  <label for="carousel-2" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                  <label for="carousel-3" class="carousel-bullet">•</label>
+              </li>
+          </ol>
+      </div>
+  </div>
+  <!--iconos-->
+  <section class="body-font">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-wrap mx-auto -mb-10 -mt-4 md:space-y-0 space-y-6">
+      <div class="p-4 md:w-1/3  2xl:w-1/3 xl:w-1/3 lg:w-1/3 sm:w-1/3 w-full flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center  mb-5 flex-shrink-0">
+       <img src="images/iconoentrega.png" alt="">
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-black-900 text-lg font-extrabold mb-3">Envíos Express <br>
+            a todo el país</h2>
+          <p class="leading-relaxed text-base">Tu pedido en tu puerta <br>
+            con servicio a toda Costa Rica</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3  2xl:w-1/3 xl:w-1/3 lg:w-1/3 sm:w-1/3 w-full flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0">
+    <img src="images/iconocontrato.png" alt="">
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-black-900 text-lg font-extrabold mb-3">Expertos <br>
+            en tu cuidado</h2>
+          <p class="leading-relaxed text-base">Productos especializados <br>
+            Consulta a nuestros <br>
+            expertos.</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3  2xl:w-1/3 xl:w-1/3 lg:w-1/3 sm:w-1/3 w-full flex flex-col text-center items-center">
+        <div class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0">
+       <img src="images/iconogarantia.png" alt="">
+        </div>
+        <div class="flex-grow">
+          <h2 class="text-black-900 text-lg font-extrabold mb-3">Totalmente <br>
+            seguro y garantizado</h2>
+          <p class="leading-relaxed text-base">Producto aprobado por la FDA <br><span class="font-extrabold">Permiso 12403819670</span>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center my-14">
+      <h2 class="sm:text-3xl text-2xl md:text-3xl lg:text-4xl font-extrabold text-black mb-4">¡Nos alegramos por cumplir tus sueños! <br>
+        Felicidades por tu cirugía</h2> <br>
+      <p class="w-3/4 mx-auto text-black text-justify">
 
+        Alimentación clave para una recuperación óptima
+        
+        Antes y después de someterte a una lipotransferencia, es fundamental mantener una alimentación equilibrada que favorezca la recuperación y potencie los efectos del procedimiento. Un aspecto esencial de esta dieta es el consumo adecuado de proteínas, ya que desempeñan un papel crucial en la cicatrización de los tejidos, la regeneración celular y el fortalecimiento del organismo durante el proceso de sanación.
+        
+       .</p> <br>
+      <p class="w-3/4 mx-auto text-black text-justify">  Un suplemento diseñado para cada fase de tu recuperación
+        
+        Para asegurar que tu cuerpo reciba los nutrientes que necesita, la proteína Mi Nueva Silueta ha sido formulada específicamente para brindarte el apoyo nutricional necesario desde el día posterior a tu cirugía hasta la completa recuperación. Su combinación de ingredientes contribuye a la reparación de los tejidos, la reducción de la inflamación y el mantenimiento de la masa muscular, ayudándote a alcanzar los mejores resultados en tu transformación corporal.</p>
+    </div>
+  </div>
+</section>
+<!--Productos--> 
+ <div class="py-4" style="background-color: #D6A8C2;"><h1 class="sm:text-2xl text-2xl md:text-4xl lg:text-4xl font-extrabold text-black text-left px-10">Conoce nuestros productos
+</h1>
+  <div class="container px-5 mx-auto">
+    <div class="flex flex-col lg:flex-row md:flex-row xl:flex-row 2xl:flex-row justify-center">
+      <div class="lg:w-1/3 md:w-1/3 xl:w-1/3 2xl:w-1/3 w-full justify-center p-4 my-5">
+          <div class="2xl:basis-6/12 xl:basis-6/12 lg:basis-6/12 md:basis-6/12  basis-full">     <p class="w-4/5 mx-auto p-2 text-2xl font-extrabold text-white">Etapa 1</p> <img src="images/fresa.png" alt="batido" class="mx-auto"><p class="w-4/5 mx-auto p-2  text-lg font-bold italic text-white">0 a 4 semanas post lipotransferencia
+          </p><p class="w-4/5 mx-auto p-1  text-md text-white"><span class="text-green-500	"> &#x2713; </span> Cicatrización</p><p class="w-4/5 mx-auto p-1 text-md text-white"><span class="text-green-500	"> &#x2713; </span> Reduce inflamación
+          </p>
+          </div> 
+      </div>
+      <div class="lg:w-1/3 md:w-1/3 xl:w-1/3 2xl:w-1/3 w-full justify-center p-4 my-5">
+        <div class="2xl:basis-6/12 xl:basis-6/12 lg:basis-6/12 md:basis-6/12 sm:basis-full basis-full justify-center">     <p class="w-4/5 mx-auto p-2 text-2xl font-extrabold	text-white">Etapa 2</p> <img src="images/chocolate.png" alt="batido" class="mx-auto"><p class="w-4/5 mx-auto p-2  text-lg text-white font-bold italic">0 a 12 semanas post lipotransferencia
+        </p><p class="w-4/5 mx-auto p-1  text-md text-white"><span class="text-green-500	"> &#x2713; </span> Cicatrización</p><p class="w-4/5 mx-auto p-1 text-md text-white"><span class="text-green-500	"> &#x2713; </span> Regeneración de tejidos
+        </p>
+        </div> 
+      </div> <div class="lg:w-1/3 md:w-1/3 xl:w-1/3 2xl:w-1/3 w-full justify-center p-4 my-5">
+        <div class="2xl:basis-6/12 xl:basis-6/12 lg:basis-6/12 md:basis-6/12 sm:basis-full basis-full">     <p class="w-4/5 mx-auto p-2 text-2xl font-extrabold	text-white">Etapa 3</p> <img src="images/vainilla.png" alt="batido" class="mx-auto"><p class="w-4/5 mx-auto p-2  text-lg text-white font-bold italic">A partir de 12 semanas post lipotransferencia
+        </p><p class="w-4/5 mx-auto p-1  text-md text-white "><span class="text-green-500	"> &#x2713; </span> Soporte final de cicatrización
+        </p><p class="w-4/5 mx-auto p-1 text-md text-white"><span class="text-green-500	"> &#x2713; </span> Maduración de tejidos
+        </p>
+        <p class="w-4/5 mx-auto p-1 text-md text-white"><span class="text-green-500	"> &#x2713; </span> Asegurar recuperación completa
+        </p>
+        </div> 
+      </div> 
+    </div>
+  </div>
+</div><div class="w-screen -mt-10 flex justify-center"><a href="Productos.html"><button class="bg-black hover:scale-110 rounded-xl text-white font-extrabold text-2xl py-4 px-20 border-4 border-solid border-white mx-auto">
+  VER MÁS
+</button> </a>  </div>
+<br>
+<!--Recuperacion-->
+  <div class="container mx-auto w-11/12	 flex px-5 py-5 md:flex-row lg:flex-row  xl:flex-row  2xl:flex-row flex-col items-center">
+    <div class="mb-10 md:mb-0 mx-10">
+      <img class="lg:max-w-lg lg:w-full md:w-1/2" alt="pictograma inicio" style="width: 150%;"  src="images/pictogramainicio.png">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class=" sm:text-4xl text-3xl mb-4 font-extrabold text-black">Una pronta recuperación
+        <br> ¡Es posible!
+      </h1>
+      <p class="mb-8 text-xl text-justify"> Optimiza tu recuperación <br>
+        Entendemos que una recuperación efectiva después de una lipotransferencia es clave para obtener los mejores resultados. Por eso, nuestras proteínas especializadas han sido desarrolladas con ingredientes de máxima calidad para favorecer el proceso de sanación, disminuir la inflamación y proporcionar a tu cuerpo los nutrientes esenciales que necesita en esta etapa.
+        <br>  
+       </p><p class="mb-8 text-xl text-justify"> Además de acelerar la regeneración del tejido, estas proteínas estimulan la producción de colágeno, fortaleciendo la piel y mejorando su elasticidad. Gracias a su formulación avanzada, te ayudarán no solo a sentirte mejor durante la recuperación, sino también a preservar y potenciar los efectos de tu procedimiento, asegurando que los resultados sean duraderos y satisfactorios. </p>
+      <div class="flex justify-right">
+       <a href="Productos.html"> <button class="inline-flex text-white border-0 py-4 px-10 focus:outline-none hover:bg-indigo-600 rounded-2xl text-2xl font-extrabold" style="background-color: #D6A8C2;">Ver productos</button></a> 
+      </div>
+    </div>
+  </div>
+  <!--deliciosos sabores-->
+  <div class="container mx-auto w-11/12	 flex px-5 py-5 md:flex-row-reverse	lg:flex-row-reverse	  xl:flex-row-reverse	  2xl:flex-row-reverse	 flex-col items-center">
+    <div class="mb-10 md:mb-0 mx-10">
+      <img class="lg:max-w-lg lg:w-full md:w-1/2" alt="pictograma inicio" style="width: 150%;"  src="images/Proteina.jpg">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class=" sm:text-4xl text-3xl mb-4 font-extrabold text-black">Deliciosos sabores
+        <br> ¡Excepcional calidad!
+      </h1>
+      <p class="mb-8 text-xl text-justify">Excelencia en calidad y sabor <br>
+        Nos dedicamos a ofrecer productos que combinan lo mejor en calidad y una experiencia de sabor inigualable. Para lograrlo, seleccionamos cuidadosamente ingredientes premium y sometemos nuestras proteínas a estrictos controles de pureza y eficacia, asegurando que cada porción cumpla con los más altos estándares. </p> <br>
+        <p class="mb-8 text-xl text-justify">
+        Además, hemos desarrollado una variedad de sabores irresistibles para que disfrutes cada toma sin renunciar al placer de un buen gusto. Queremos que el consumo de nuestras proteínas no solo sea beneficioso para tu salud y recuperación, sino también una experiencia agradable y satisfactoria en cada sorbo.</p>
+      <div class="flex justify-right">
+      <a href="Productos.html">  <button class="inline-flex text-white border-0 py-3 px-10 focus:outline-none hover:bg-indigo-600 rounded-2xl text-2xl font-extrabold" style="background-color: #D6A8C2;">Ver productos</button></a> 
+      </div>
+    </div>
+  </div>
+  <hr class="my-8 w-screen border-solid border-2" style="border-color:#D6A8C2;">
+<!--reproductor media-->
+<div class="container px-5 sm:py-16 py-5 mx-auto">
+  <div class="flex  md:flex-row flex-col justify-center">
+    <!-- Miniatura blog -->
+    <div class="p-4 md:w-1/3">
+      <h1 class="text-xl lg:text-2xl font-extrabold text-black text-center mb-4">CUIDA TU SALUD<br>Lee nuestro Blog</h1>
+      <div class="media-container border-2 border-gray-200 rounded-lg">
+        <a href="https://minuevasilueta.com/blogs/news/">
+          <img src="https://minuevasilueta.com/cdn/shop/articles/2148207470.jpg" alt="Blog">
+        </a>
+      </div>
+    </div>
+    <!-- Primer video -->
+    <div class="p-4 md:w-1/3">
+      <h1 class="text-xl lg:text-2xl font-extrabold text-black text-center mb-4">¿Por qué consumir proteína después de lipotransferencia?</h1>
+      <div class="media-container border-2 border-gray-200 rounded-lg">
+        <iframe  src="https://www.youtube.com/embed/D3jB5UYfqMM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Segundo video -->
+    <div class="p-4 md:w-1/3">
+      <h1 class="text-xl lg:text-2xl font-extrabold text-black text-center mb-4"><br> Etapas de la proteína</h1>
+      <div class="media-container border-2 border-gray-200 rounded-lg">
+        <iframe src="https://www.youtube.com/embed/6PKhJVKzMUc"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer--> 
+<div class="h-auto bottom-0" style="background: #D6A8C2;
+background: linear-gradient(to top, #D6A8C2 70%, #FFFFFF 100%);">  
+<footer class="text-black 2xl:w-2/3 xl:w-2/3 lg:w-2/3 w-full mx-auto">
+  <div class="container px-5  mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class=" md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10"> &nbsp; &nbsp;  &nbsp; &nbsp;
+      <p class="text-2xl text-white font-extrabold text-center	">¡Belleza y salud <br>
+        en el mismo lugar!</p>
+    </div>
+    <div class="flex-auto flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <nav class="list-none mb-10"> <ul> 
+          <li>
+            <a href="index.html" class="font-extrabold text-xl	 hover:text-gray-800">Inicio</a>
+          </li>
+          <li>
+            <a href="Productos.html" class="font-extrabold	text-xl	 hover:text-gray-800">Productos</a>
+          </li>
+          <li>
+            <a href="https://minuevasilueta.com/blogs/news" class="font-extrabold	text-xl	 hover:text-gray-800">Blog</a>
+          </li></ul>
+        </nav>
+      </div>
+      <div class="w-1 bg-black   h-auto hidden md:block m-4"></div> 
+      <div class="lg:w-2/6	 md:w-1/2 w-full px-4">
+        <a href="Contacto.html" class="font-extrabold	text-xl mb-3">Contacto<a/>
+        <nav class="list-none mb-10"> <ul> 
+          <li> <a  class="flex flex-row" href="mailto:info@uzaga.shop?cc=info@uzaga.shop&amp;subject=Email-subject&amp;body=Hola%20deseo%2C%0A%0A%3Csaber%20mas%20de%20los%20productos%3E"><img src="images/iconocorreo.png" alt="correo" style="width: 25px;"> info@uzaga.shop</a>
+          </li>
+          <li>
+            <a class="flex flex-row" href="https://wa.me/50684134199"><img src="images/iconowhatsapp.png" alt="whatsapp" style="width: 25px;"> (506)84134199</a>
+          </li></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>&nbsp;  &nbsp; 
+<p class="text-center	 "> Diseñada por 2tpoint.com . Todos los derechos reservados. 2025</p>
+</div>
+</body>
 </html>
